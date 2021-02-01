@@ -29,9 +29,7 @@ const options = (mailOptions = {
   to: "995382997@qq.com", // 发送邮箱必须与上面开通ssl的邮箱一致
   subject: "邮件测试", // 标题
   //text: 'Hello world?', // text html二者选一
-  html: `
-    > 66666666666
-  `,
+  html: `<h1>这是P标签</h1>`,
 })
 
 transporter.sendMail(mailOptions, function (error, info) {
