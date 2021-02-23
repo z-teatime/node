@@ -18,6 +18,17 @@ module.exports = appInfo => {
   // add your middleware config here
   config.middleware = [];
 
+  config.security = {
+    xframe: {
+      enable: false,
+    },
+    csrf: {
+      enable: false,
+      // 判断是否需要 ignore 的方法，请求上下文 context 作为第一个参数
+      // ignore: ctx => /192/.test(ctx.ip),
+    },
+  }
+
   // add your user config here
   const userConfig = {
     // myAppName: 'egg',

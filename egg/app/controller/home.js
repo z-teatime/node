@@ -10,10 +10,11 @@ class HomeController extends Controller {
 
   async info() {
     const { ctx } = this;
-    console.log('ctxxxxxx', ctx)
+    console.log('ctxxxxxx', ctx.request, ctx.request.body)
+    debugger
     ctx.body = {
       code: 200,
-      data: 'xxxx'
+      data: ctx.request.body
     }
   }
 }
