@@ -3,6 +3,10 @@
 const Controller = require('egg').Controller;
 const notifier = require('node-notifier')
 
+function notify(params) {
+  notifier.notify('Message')
+}
+notify()
 class HomeController extends Controller {
   async index() {
     const { ctx } = this;
@@ -18,6 +22,7 @@ class HomeController extends Controller {
     debugger
 
     // notifier.notify('Message')
+    // notify()
 
     // notifier.notify({
     //   // title: body.object_kind,
