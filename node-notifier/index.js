@@ -1,17 +1,22 @@
 const notifier = require('node-notifier')
 const schedule = require('node-schedule')
 
-const rule = new schedule.RecurrenceRule()
-rule.dayOfWeek = [0, new schedule.Range(1, 5)]
-rule.minute = 40
-rule.hour = 13
+// const rule = new schedule.RecurrenceRule()
+// rule.dayOfWeek = [0, new schedule.Range(1, 5)]
+// rule.minute = 40
+// rule.hour = 13
 
-schedule.scheduleJob(rule, function(){
-  notifier.notify({
-    title: 'My notification',
-    message: 'Hello, there!'
-  })
+notifier.notify({
+  title: 'My notification',
+  message: 'Hello, there!'
 })
+
+// schedule.scheduleJob(rule, function(){
+//   notifier.notify({
+//     title: 'My notification',
+//     message: 'Hello, there!'
+//   })
+// })
 
 
 // String
