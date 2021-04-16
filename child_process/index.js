@@ -1,6 +1,6 @@
-const { promisify } = require('util')
+// const { promisify } = require('util')
 const { exec, execFile } = require('child_process')
-const execWithPromise = promisify(exec)
+// const execWithPromise = promisify(exec)
 
 // execFile(`d:/Documents/GitHub/node/node_modules/node-notifier/vendor/snoreToast/snoretoast-x64.exe`, [
 //     '-pipeName',

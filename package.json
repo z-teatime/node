@@ -16,6 +16,7 @@
     "http-server": "^0.12.3",
     "jsdoc-to-markdown": "^6.0.1",
     "lodash": "^4.17.21",
+    "node-fetch": "^2.6.1",
     "node-notifier": "^9.0.0",
     "node-notifier-cli": "^1.2.1",
     "node-schedule": "^2.0.0",
