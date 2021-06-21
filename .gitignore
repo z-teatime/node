@@ -20,3 +20,5 @@ selenium-debug.log
 *.bak
 
 package-lock.json
+puppeteer/tmp
+puppeteer/*.png

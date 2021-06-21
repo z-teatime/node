@@ -14,6 +14,7 @@
     "dingtalk-robot-sender": "^1.2.0",
     "express": "^4.17.1",
     "http-server": "^0.12.3",
+    "internal": "^2.0.27",
     "jsdoc-to-markdown": "^6.0.1",
     "lodash": "^4.17.21",
     "node-fetch": "^2.6.1",
@@ -21,6 +22,7 @@
     "node-notifier-cli": "^1.2.1",
     "node-schedule": "^2.0.0",
     "nodemailer": "^6.4.17",
-    "vue-template-compiler": "^2.6.12"
+    "puppeteer": "^10.0.0",
+    "vue-template-compiler": "^2.6.14"
   }
 }
