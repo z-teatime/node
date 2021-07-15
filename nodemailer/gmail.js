@@ -1,11 +1,13 @@
 const nodemailer = require("nodemailer");
 
 const transporter = nodemailer.createTransport({
-  host: 'smtp.gmail.com', port: 465, secure: true, // use SSL
+  host: 'smtp.gmail.com',
+  port: 465,
+  secure: true, // use SSL
   auth: {
     name: 'Pinghua Zhuang',
     user: "zphua2016",
-    // 这里密码不是qq密码，是你设置的smtp授权码
+    // smtp授权码
     pass: "ybdrzmdxxkfgkqxs",
   },
   proxy: 'http://localhost:7890',

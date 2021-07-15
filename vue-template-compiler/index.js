@@ -3,7 +3,7 @@ const compliler = require('vue-template-compiler')
 
 console.log('compliler', compliler)
 
-const ret = compliler(`<template>
+const ret = compliler.parseComponent(`<template>
 <ul class="drag-items" ref="drags">
     <li
       class="drag-item"
@@ -38,5 +38,14 @@ export default {
 }
 </style>
 `)
+const ret1 = compliler.compile('<div v-test><span>123</span></div>', {
+  directives: {
+    test (node, directiveMeta) {
+      console.log('node', node)
+      // transform node based on directiveMeta
+    }
+  }
+})
+console.log('ret', ret, ret1)
 
-console.log('ret', ret)
+// const ret2 = compliler.compile(ret)
