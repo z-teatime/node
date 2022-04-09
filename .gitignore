@@ -21,3 +21,4 @@ selenium-debug.log
 package-lock.json
 puppeteer/tmp
 puppeteer/*.png
+_test
