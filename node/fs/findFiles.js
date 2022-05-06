@@ -27,4 +27,7 @@ function findFilesSync(startPath, reg) {
   return result;
 }
 
+// 判读是否存在文件
+// existsSync
+
 let fileNames = findFilesSync("./");
